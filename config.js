@@ -44,7 +44,7 @@ global.watermark = '© EVA'
 
 global.multiplier = 69 // Semakin tinggi, semakin sulit naik level
 
-let chalk = require('chalk')
+
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
   fs.unwatchFile(file)
