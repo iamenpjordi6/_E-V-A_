@@ -21,7 +21,6 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 
-// https://jalantikus.com/tips/kata-kata-bucin/
 global.bucin = [
   "I choose to be alone, not because I'm waiting for the perfect one, but need someone who never gives up.",
   "A single person is created with a partner he has not yet found.",

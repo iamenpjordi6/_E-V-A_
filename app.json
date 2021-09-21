@@ -1,8 +1,8 @@
 {
-  "name": "_EVA_",
+  "name": "Eva",
   "description": "Lightweight WhatsApp Bot",
-  "repository": "https://github.com/",
-  "logo": "",
+  "repository": "https://github.com/SudoAnirudh/_E-V-A_",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
   "keywords": [
     "bot",
     "whatsapp",

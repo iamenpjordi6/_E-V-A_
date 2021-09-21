@@ -1,17 +1,14 @@
-let handler = async (m, { conn, participants }) => {
-  let members = participants.filter(member => !member.isAdmin).map(member => member.jid)
-  let users = m.mentionedJid.filter(user => members.includes(user))
-  for (let user of users) await conn.groupMakeAdmin(m.chat, [user]).catch(console.log)
+let handler = async (m, { conn, text, participants }) => {
+    let users = participants.map(u => u.jid)
+    m.reply(`${text ? `${text}\n` : ''}┌─〔 Tag All 〕\n` + users.map(v => '├ @' + v.replace(/@.+/, '')).join`\n` + '\n└────', null, {
+        contextInfo: { mentionedJid: users }
+    })
 }
-handler.help = ['promote', 'admin', '^'].map(v => 'o' + v + ' @user')
-handler.tags = ['owner']
 
-handler.command = /^(opromote|oadmin|o\^)$/i
+handler.help = ['otagall']
+handler.tags = ['owner']
+handler.command = ['otagall']
 
 handler.owner = true
-handler.group = true
-
-handler.admin = false
-handler.botAdmin = true
 
 module.exports = handler

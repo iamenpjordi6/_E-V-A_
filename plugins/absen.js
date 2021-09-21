@@ -2,7 +2,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let id = m.chat
     conn.absen = conn.absen ? conn.absen : {}
     if (!(id in conn.absen)) {
-        await conn.sendButton(m.chat, `_*Tidak ada absen berlangsung digrup ini!*_\n\nketik *${usedPrefix}mulaiabsen* untuk memulai absen`, watermark, 'Mulai', `${usedPrefix}mulaiabsen`, m)
+        await conn.sendButton(m.chat, `_*Tidak ada absen berlangsung digrup ini!*_\n\nketik *${usedPrefix}mulaiabsen* untuk memulai absen`, '© stikerin', 'Mulai', `${usedPrefix}mulaiabsen`, m)
         throw false
     }
 
@@ -18,16 +18,16 @@ let handler = async (m, { conn, usedPrefix }) => {
     })
     let list = absen.map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')
     let caption = `
-Date: ${date}
+Tanggal: ${date}
 ${conn.absen[id][2]}
 
-┌〔 absent list 〕
+┌〔 daftar absen 〕
 │ 
 ├ Total: ${absen.length}
 ${list}
 │ 
 └────`.trim()
-    await conn.send2Button(m.chat, caption, watermark, 'Absen', `${usedPrefix}absen`, 'Cek', `${usedPrefix}cekabsen`, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } })
+    await conn.send2Button(m.chat, caption, '© stikerin', 'Absen', `${usedPrefix}absen`, 'Cek', `${usedPrefix}cekabsen`, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } })
 }
 handler.help = ['absen']
 handler.tags = ['absen']

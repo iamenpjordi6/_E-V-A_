@@ -1,50 +1,43 @@
 let fs = require('fs')
-global.owner = ['919539102851'] // Letakan nomor kamu disini
-global.mods = ['919539102851'] // Moderator?
+global.owner = ['6283128734012', '6288709645535'] // Letakan nomor kamu disini
+global.mods = [] // Moderator?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
   // nama: 'https://website'
+  bx: 'Ikyy69',
+  dhnjing: 'https://dhnjing.xyz',
   hardianto: 'hardianto',
   jonaz: 'https://jonaz-api-v2.herokuapp.com',
   neoxr: 'neoxr',
   nrtm: 'https://nurutomo.herokuapp.com',
-  pencarikode: 'APIKEY',
+  pencarikode: 'pais',
   xteam: '65654c74a7169de8',
   zahir: 'zahirgans',
   zekais: 'If7IyniS',
-  zeks: 'SUcKEWdDpYjtj2q045KNQCoDyCe',
-  vhtear: 'AW62938KK46292gJ73639h',
-  lolhum: 'ab7df38f1d53e257d50a575b',
-  fxc7: 'pnj8NAJb',
-  aqul: 'xinzbot'
-
+  zeks: 'apivinz',
 }
 global.APIKeys = { // APIKey nya disini
   // 'https://website': 'apikey'
+  'https://bx-hunter.herokuapp.com': 'Ikyy69',
   'https://hardianto-chan.herokuapp.com': 'hardianto',
   'https://neoxr-api.herokuapp.com': 'yntkts',
-  'https://pencarikode.xyz': 'APIKEY',
-  'https://api.xteam.xyz': 'apikey lu',
+  'https://pencarikode.xyz': 'pais',
+  'https://api.xteam.xyz': 'apikeymu',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.zeks.xyz': 'apikey lu',
-  'https://api.lolhuman.xyz': 'apikey lu',
-  'https://api.vhtear.com': 'apikey lu',
-  'https://fxc7-api.herokuapp.com': 'apikey lu',
-  'https://api.justaqul.xyz': 'apikey lu'
+  'https://api.zeks.xyz': 'apivinz',
 }
 
 // Sticker WM
 global.packname = 'Eva'
 global.author = 'Anirudh'
 
-global.wait = '「 ⏱️ 」Please wait...'
-global.eror = '*Server Error*'
+global.wait = '_*Please Wait..*_'
+global.eror = '_*Server Error*_'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
-global.watermark = '© EVA'
 
 global.multiplier = 69 // Semakin tinggi, semakin sulit naik level
 
-
+let chalk = require('chalk')
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
   fs.unwatchFile(file)
@@ -52,5 +45,3 @@ fs.watchFile(file, () => {
   delete require.cache[file]
   require(file)
 })
-
-// masukin apikey lu yang ada tulisan 'apikey lu' nya
