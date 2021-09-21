@@ -1,7 +1,11 @@
 {
-  "name": "Eva",
-  "description": "whatsapp bot build with nodejs",
-  "repository": "https://github.com/SudoAnirudh/_E-V-A_",
-  "logo": "https://api.zeks.xyz/logo.jpg",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation"]
+  "name": "_EVA_",
+  "description": "Lightweight WhatsApp Bot",
+  "repository": "https://github.com/",
+  "logo": "",
+  "keywords": [
+    "bot",
+    "whatsapp",
+    "whatsapp-bot"
+  ]
 }
