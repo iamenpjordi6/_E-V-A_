@@ -1,7 +1,7 @@
 {
   "name": "Eva",
   "version": "1.1.2",
-  "description": "WhatsApp Bot Ringan",
+  "description": "WhatsApp Bot",
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -9,7 +9,7 @@
     "plugins": "plugins"
   },
   "scripts": {
-    "start": "node index.js --self",
+    "start": "node index.js --public",
     "test": "node test.js"
   },
   "repository": {
