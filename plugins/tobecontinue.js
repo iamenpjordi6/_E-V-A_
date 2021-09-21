@@ -1,6 +1,5 @@
 const { createCanvas, loadImage } = require('canvas');
 const path = require('path');
-const { drawImageWithTint } = require('./../lib/Canvas');
 
 let handler = async (m, { conn }) => {
   console.log("Called");
