@@ -1,9 +1,9 @@
 let handler = async (m, { conn, usedPrefix, command }) => {
   await conn.sendButton(m.chat, `“${pickRandom(global.bucin)}”`, watermark, 'Quotes', `${usedPrefix + command}`)
 }
-handler.help = ['bucin']
+handler.help = ['quotes']
 handler.tags = ['quotes']
-handler.command = /^(bucin)$/i
+handler.command = /^(quotes)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
@@ -42,8 +42,8 @@ global.bucin = [
   "I can't promise to be good. But I promise to always be by your side.",
   "If I become a representative of the people I will definitely fail, how can I think about the people if the only thing on my mind is you.",
   "Look at my garden, full of flowers. Look at your eyes, my heart is blooming.",
-  "Promise to be with me now, tomorrow, and forever."
-  "Missing doesnt only arise because of the distance apart But also because of wishes that dont come true.",
+  "Promise to be with me now, tomorrow, and forever.",
+  "Missing doesnt only arise because of the distance apart But also because of wishes that dont come true",
   "You will never be far from me, wherever I go you are always there, because you are always in my heart, what is far is only our bodies, not our hearts.",
   "I know in every glance, we are hindered by distance and time. But I believe that later we will definitely be united.",
   "Missing you without ever meeting is the same as creating a song that's never been sung.",
@@ -83,12 +83,12 @@ global.bucin = [
   "I didn't know what love was, until I finally met you. But, at that moment I knew how it felt to be heartbroken.",
   "Chasing is tiring, but even more tired waiting\nWaiting for you to notice my existence...",
   "Don't stop loving just because you've been hurt. Because there's no rainbow without rain, there's no true love without tears.",
-  "I have a million reasons to forget you, but nothing can force me to stop loving you."
+  "I have a million reasons to forget you, but nothing can force me to stop loving you.",
   "Sometimes one feels so stupid just to love someone.",
   "You are the best heartbreak I've never regretted.",
   "It's not that it's not worth the wait, it's just that it often gives false hope.",
   "Part of me hurts, Remembering her so close, yet untouchable.",
-  "The best thing about loving someone is secretly praying for them."
+  "The best thing about loving someone is secretly praying for them.",
   "I wish I could get rid of this feeling as soon as I lost you.",
   "For the sake of love we deceive ourselves. Trying to be strong turns out to be dishonorable.",
   "Think of me as your home, if you go you know where to go home. Stay if you want and leave if you are bored...",
@@ -114,7 +114,7 @@ global.bucin = [
   "I really want to give the world to you. But since that's not possible, then I will give you the most important thing in my life, which is my world.",
   "It's better to sing humorously but sweetly, rather than pretending to be romantic but having a tragic ending.",
   "Ben doesn't end up being disappointed, you have to know when to hope and when to stop.",
-  "I, Ki wong Jowo, don't understand the meaning of 'I Love U'.
+  "I, Ki wong Jowo, don't understand the meaning of I Love U.",
   "You don't need ayu and sugih, I'm pretty sure wes are happy and crazy.",
   "My love for your crew is shattered by the camera, focus on your crew is still blurry.",
   "Saben dino kegowo dreams but can't be stupid.",
@@ -130,7 +130,7 @@ global.bucin = [
   "Urang's patience is the limit, but your love for urang is good for you.",
   "Hayang I think I'm cursing up the words of love like this in this world, then I'm bade curing kumpulkeun, so that Anjeun nyaho is very big, the love for you is low, Ka Anjeun.",
   "Calm down wae neng, ari love brother mah sapertos krispatih song; timeless.",
-  "Abdi sanes jalmi nu sampurna pikeun anjeun, sareng sanes oge nu is the best kanggo anjeun.
+  "Abdi sanes jalmi nu sampurna pikeun anjeun, sareng sanes oge nu is the best kanggo anjeun.",
   "It's enough just to lose the network, you don't.",
   "I'm often made to eat liver. But realizing you're still here makes me happy again.",
   "My enemies are those who want to have you too.",

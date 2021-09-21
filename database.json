@@ -24,7 +24,7 @@
       "axp": 0
     },
     "919539102851@s.whatsapp.net": {
-      "exp": 2706,
+      "exp": 2753,
       "limit": 10,
       "lastclaim": 0,
       "registered": true,
@@ -141,7 +141,7 @@
       "axp": 0
     },
     "13656503237@s.whatsapp.net": {
-      "exp": 702,
+      "exp": 708,
       "limit": 10,
       "lastclaim": 0,
       "registered": false,
@@ -2696,7 +2696,7 @@
       "axp": 0
     },
     "918075262406@s.whatsapp.net": {
-      "exp": 17,
+      "exp": 40,
       "limit": 10,
       "lastclaim": 0,
       "registered": false,
@@ -7627,6 +7627,22 @@
       "expired": 0,
       "antiBadword": true,
       "viewonce": true
+    },
+    "918075262406@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "descUpdate": true,
+      "stiker": false,
+      "delete": true,
+      "antiLink": false,
+      "expired": 0,
+      "antiBadword": true,
+      "viewonce": true
     }
   },
   "stats": {
@@ -7643,10 +7659,10 @@
       "lastSuccess": 1632153910287
     },
     "menu.js": {
-      "total": 141,
-      "success": 139,
-      "last": 1632152554668,
-      "lastSuccess": 1632152554668
+      "total": 142,
+      "success": 140,
+      "last": 1632183125707,
+      "lastSuccess": 1632183125707
     },
     "igstory.js": {
       "total": 11,
@@ -8013,6 +8029,12 @@
       "success": 2,
       "last": 1632132644246,
       "lastSuccess": 1632132644246
+    },
+    "bucin.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1632183454505,
+      "lastSuccess": 1632183454505
     }
   },
   "msgs": {},
@@ -8040,7 +8062,7 @@
       "groupOnly": false,
       "jadibot": false,
       "nsfw": true,
-      "status": 1632180606518
+      "status": 1632183453771
     },
     "nsfw": true,
     "anticall": true,

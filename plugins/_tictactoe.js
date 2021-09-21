@@ -72,7 +72,7 @@ Room ID: ${room.id}
                 mentionedJid: this.parseMention(str)
             }
         })
-        await conn.sendButton(room.o, str, watermark, 'Giveup', 'giveup',' m, {
+        await conn.sendButton(room.o, str, watermark, 'Giveup', 'giveup',' m', {
             contextInfo: {
                 mentionedJid: this.parseMention(str)
             }
