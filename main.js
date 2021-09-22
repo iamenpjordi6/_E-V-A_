@@ -125,10 +125,10 @@ global.reloadHandler = function () {
     conn.off('group-update', conn.onGroupUpdate)
     conn.off('CB:action,,call', conn.onCall)
   }
-  conn.welcome = 'Hi @user!\nWelcome to the @subject group\n\n@desc'
+  conn.welcome = 'Hai, @user!\nWelcome to the group@subject\n\n@desc'
   conn.bye = 'Goodbye @user'
   conn.spromote = '@user now admin'
-  conn.sdemote = '@the current user is not an admin'
+  conn.sdemote = '@user not admin now'
   conn.handler = handler.handler
   conn.onDelete = handler.delete
   conn.onParticipantsUpdate = handler.participantsUpdate
@@ -185,7 +185,7 @@ global.reload = (_event, filename) => {
       }
     } else conn.logger.info(`need new plugin '${filename}'`)
     let err = syntaxerror(fs.readFileSync(dir), filename)
-    if (err) conn.logger.error(`syntax error when loading '${filename}'\n${err}`)
+    if (err) conn.logger.error(`syntax error when loading'${filename}'\n${err}`)
     else try {
       global.plugins[filename] = require(dir)
     } catch (e) {

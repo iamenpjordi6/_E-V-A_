@@ -3,11 +3,6 @@
   "version": "1.1.2",
   "description": "WhatsApp Bot",
   "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "src": "src",
-    "plugins": "plugins"
-  },
   "scripts": {
     "start": "node index.js --public",
     "test": "node test.js"
@@ -46,7 +41,6 @@
     "img2braille": "^1.0.1",
     "jsbarcode": "^3.11.4",
     "jsdom": "^16.6.0",
-    "knights-canvas": "^1.2.7",
     "lodash": "^4.17.21",
     "lowdb": "^2.1.0",
     "moment-timezone": "^0.5.33",
