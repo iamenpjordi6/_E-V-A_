@@ -1,20 +1,20 @@
 let fs = require('fs')
 global.owner = ['919539102851'] // Letakan nomor kamu disini
-global.mods = [919539102851] // Moderator?
+global.mods = [] // Moderator?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
   // nama: 'https://website'
-  bx: 'Ikyy69',
-  dhnjing: 'https://dhnjing.xyz',
-  hardianto: 'hardianto',
+  bx: 'https://bx-hunter.herokuapp.com',
+  hardianto: 'https://hardianto-chan.herokuapp.com',
   jonaz: 'https://jonaz-api-v2.herokuapp.com',
-  neoxr: 'neoxr',
+  neoxr: 'https://neoxr-api.herokuapp.com',
   nrtm: 'https://nurutomo.herokuapp.com',
-  pencarikode: 'pais',
-  xteam: '65654c74a7169de8',
-  zahir: 'zahirgans',
-  zekais: 'If7IyniS',
-  zeks: 'apivinz',
+  pencarikode: 'https://pencarikode.xyz',
+  xteam: 'https://api.xteam.xyz',
+  l0lhuman: 'https://api.lolhuman.xyz',
+  zahir: 'https://zahirr-web.herokuapp.com',
+  zekais: 'http://zekais-api.herokuapp.com',
+  zeks: 'https://api.zeks.xyz',
 }
 global.APIKeys = { // APIKey nya disini
   // 'https://website': 'apikey'
@@ -22,7 +22,8 @@ global.APIKeys = { // APIKey nya disini
   'https://hardianto-chan.herokuapp.com': 'hardianto',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://pencarikode.xyz': 'pais',
-  'https://api.xteam.xyz': 'apikeymu',
+  'https://api.xteam.xyz': 'isi apikey lu',
+  'https://api.lolhuman.xyz': 'isi pake apikey lu',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.xyz': 'apivinz',
 }
