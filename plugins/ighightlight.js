@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, args, command, usedPrefix }) => {
   if (!args[0]) throw `uhm.. where's the username?\n\nexample:\n${usedPrefix + command} leomessi`
-  let res = await fetch(global.API('xteam', '/dl/ighighlight', {
+  let res = await fetch(global.API('zekais', '/ighighlight', {
     nama: args[0]
   }, 'APIKEY'))
   if (!res.ok) throw eror
