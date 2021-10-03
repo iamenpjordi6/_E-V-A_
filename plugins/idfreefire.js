@@ -7,8 +7,8 @@ let handler = async (m, { args, usedPrefix, command }) => {
   if (!json.status) throw json
   m.reply(json.result.name)
 }
-handler.help = ['epep'].map(v => v + ' <id>')
-handler.tags = ['internet']
+handler.help = ['idfreefire'].map(v => v + ' <id>')
+handler.tags = ['game']
 handler.command = /^(freefire|epep)$/i
 
 module.exports = handler

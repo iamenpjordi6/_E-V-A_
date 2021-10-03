@@ -1,4 +1,3 @@
-  
 let levelling = require('../lib/levelling')
 let { MessageType } = require('@adiwajshing/baileys')
 let fs = require('fs')
@@ -27,13 +26,15 @@ ${'```%npmdesc```'}
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let tags
   let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'game', 'xp', 'stiker','quotes', 'admin', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio','info','owner']
+  let arrayMenu = ['all', 'game', 'xp', 'stiker','quotes', 'admin', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools','anime', 'fun', 'database', 'quran', 'audio','info','owner']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
     'main': 'Main',
     'game': 'Game',
     'xp': 'Exp & Limit',
+    'anime': 'Anime',
     'sticker': 'Stiker',
+    'shell': 'Magic Shells',
     'quotes': 'Quotes',
     'admin': `Admin ${global.opts['restrict'] ? '' : '(Disabled)'}`,
     'group': 'Grup',
@@ -58,6 +59,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'stiker') tags = {
     'sticker': 'Stiker'
+  }
+  if (teks == 'kerang') tags = {
+    'shell': 'Magic Shells'
   }
   if (teks == 'quotes') tags = {
     'quotes': 'Quotes'
@@ -88,6 +92,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'fun') tags = {
     'fun': 'Fun'
+  }
+  if (teks == 'anime') tags = {
+    'anime': 'Anime'
   }
   if (teks == 'database') tags = {
     'database': 'Database'
@@ -167,11 +174,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
               "rows": [
                 {
                   "title": `All Commands`,
-                  "description": "",
+                  "description": "Gives The All Commands Of Bot",
                   "rowId": ".? all"
                 }, {
                   "title": "Game",
-                  "description": "",
+                  "description": "Game Related Plugins",
                   "rowId": ".? game"
 
                 }, {
@@ -181,39 +188,43 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
                 }, {
                   "title": "Stiker",
-                  "description": "",
+                  "description": "Sticker Related",
                   "rowId": ".? stiker"
-                }, {
+                }, { 
+                "title": "Anime",
+                "description": "Anime Related Plugin",
+                "rowId": ".? anime"
+              },  {
                   "title": "Quotes",
-                  "description": "",
+                  "description": "Gives You Random Quotes..",
                   "rowId": ".? quotes"
                 }, {
                   "title": "Admin",
-                  "description": "",
+                  "description": "Group Admin Commands",
                   "rowId": ".? admin"
                 }, {
                   "title": "Grup",
-                  "description": "",
+                  "description": "Group Related Commands",
                   "rowId": ".? grup"
                 }, {
                   "title": "Premium",
-                  "description": "",
+                  "description": "Premium Users Plugins",
                   "rowId": ".? premium"
                 }, {
                   "title": "Internet",
-                  "description": "",
+                  "description": "Commands Related To Internet",
                   "rowId": ".? internet"
                 }, {
                   "title": "Anonymous",
-                  "description": "",
+                  "description": "To Start Anonymous Chatting",
                   "rowId": ".? anonymous"
                 }, {
                   "title": "Nulis & Logo",
-                  "description": "",
+                  "description": "Text Maker Coammnds",
                   "rowId": ".? nulis"
                 }, {
                   "title": "Downloader",
-                  "description": "",
+                  "description": "Downloading Commnds",
                   "rowId": ".? downloader"
                 }, {
                   "title": "Tools",
@@ -246,7 +257,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         }
       }, {}), { waitForAck: true })
     }
-    // gunakan ini jika kamu menggunakan whatsapp bisnis
+    // use this if you use business whatsapp
     //   throw `
     // ┌〔 DAFTAR MENU 〕
     // ├ ${_p + command} all
@@ -323,7 +334,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'Made With ❤️ by Anirudh', 'Owner Bot', '.owner', 'All Commands', '.all', m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'Made With ❤️ by Anirudh', 'Owner Bot', '.owner', 'All Commands', '.? all', m)
   } catch (e) {
     conn.reply(m.chat, 'Sorry, the menu is in error', m)
     throw e

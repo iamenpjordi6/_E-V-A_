@@ -36,12 +36,6 @@ https://github.com/SudoAnirudh/_E-V-A_
 `.trim(), '© Eva', 'Bot Owner', ',owner', m)
     }
 
-    // salam
-    let reg = /(ass?alam|اَلسَّلاَمُ عَلَيْكُمْ|السلام عليکم)/i
-    let isSalam = reg.exec(m.text)
-    if (isSalam && !m.fromMe) {
-        m.reply(`وَعَلَيْكُمْ السَّلاَمُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ\n_wa\'alaikumussalam wr.wb._`)
-    }
 
     // backup db
     if (setting.backup) {

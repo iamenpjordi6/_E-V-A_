@@ -6,7 +6,7 @@ let handler = async (m, { conn, command, args }) => {
   else chats = [m.chat]
   let isDelete = /^(delete)/i.test(command)
   let isClear = /^(clear)/i.test(command)
-  m.reply(`me${isDelete ? 'nghapus' : isClear ? 'clean up' : 'mute'} ${chats.length} chat ${args[0] ? args[0] : ''}`)
+  m.reply(`me${isDelete ? 'delete' : isClear ? 'clean up' : 'mute'} ${chats.length} chat ${args[0] ? args[0] : ''}`)
   for (let id of chats) {
     if (isDelete || isClear) await conn.modifyChat(id, (isDelete ? 'delete' : 'clear'), {
       includeStarred: false

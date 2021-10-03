@@ -11,7 +11,7 @@ handler.all = async function (m) {
     if (new Date - user.pc < 86400000) return // setiap 24 jam sekali
     await this.sendButton(m.chat, `
 Hai, ${ucapan()}
-${user.banned ? 'youre banned' : 'Im Eva, one of the Whatsapp Bots. please dont spam/call/ask to save to this number. Can I help you?'}
+${user.banned ? 'you are banned' : 'Im Eva, please dont spam/call/ask to save to this number. Can I help you?'}
 `.trim(), watermark, user.banned ? 'Bot Owner' : 'Menu', user.banned ? ',owner' : ',?', m)
     user.pc = new Date * 1
 }
