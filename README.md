@@ -55,7 +55,7 @@ node .
 
 ## Arguments `node . [--options] [<session name>]`
 
-#### Contoh: `node . --self --restrict --autoread`
+#### Example: `node . --self --restrict --autoread`
 
 ### `--self`
 
