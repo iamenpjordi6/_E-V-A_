@@ -219,7 +219,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       break
     default:
       if (!/[01]/.test(command)) throw `
-┌〔 Daftar Opsi 〕${isOwner ? '\n├ anon\n├ antispam\n├ antitroli\n├ autoread\n├ backup\n├ clear\n├ grouponly\n├ nsfw\n├ public\n├ mycontact' : ''}
+┌〔 List Options 〕${isOwner ? '\n├ anon\n├ antispam\n├ antitroli\n├ autoread\n├ backup\n├ clear\n├ grouponly\n├ nsfw\n├ public\n├ mycontact' : ''}
 ├ antilink
 ├ autolevelup
 ├ delete
@@ -236,7 +236,7 @@ ${usedPrefix}off welcome
       throw false
   }
   m.reply(`
-*${type}* successful in *${isEnable ? 'flame' : 'dead'}right* ${isAll ? 'for this bot' : isUser ? '' : 'for this chat'}
+*${type}* successful in *${isEnable ? 'enable' : 'dead'}right* ${isAll ? 'for this bot' : isUser ? '' : 'for this chat'}
 `.trim())
 }
 handler.help = ['on', 'off'].map(v => v + ' <opsi>')
