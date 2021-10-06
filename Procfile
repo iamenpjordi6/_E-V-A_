@@ -1,1 +1,1 @@
-web: node . --big-qr
+web: node . --server
