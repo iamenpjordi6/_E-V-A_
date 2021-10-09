@@ -13,7 +13,7 @@ handler.before = async (m) => {
         axios.get(`https://api.simsimi.net/v2/?text=&lc=en&cf=false`).then(res => {
               let text = res.data.success
               let url = googleTTS.getAudioUrl(`${text}`, {
-                  lang: 'id',
+                  lang: 'en',
                   slow: false,
                   host: 'https://translate.google.com',
               })
