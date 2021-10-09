@@ -10,8 +10,8 @@ const defaultMenu = {
 
 ╔══✪〔 %me 〕✪══
 ╠➥ Hai, %name!
-╠➥ Github:https://github.com/SudoAnirudh
-╠➥Instagram:https://www.instagram.com/__a_n_i_r_u_d_h_/
+╠➥ Github:https://github.com/iamenpjordi
+╠➥Instagram:https://www.instagram.com/nsutjordi
 ╚═〘 Eva 〙
 %readmore`.trimStart(),
   header: '┌─〔 %category 〕',
@@ -326,7 +326,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'Made With ❤️ by Anirudh', 'Owner Bot', '.owner', 'All Commands', '.? all', m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'Made With ❤️ by Jordi', 'Owner Bot', '.owner', 'All Commands', '.? all', m)
   } catch (e) {
     conn.reply(m.chat, 'Sorry, the menu is in error', m)
     throw e
