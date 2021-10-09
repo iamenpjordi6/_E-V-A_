@@ -1,9 +1,9 @@
 let axios = require("axios");
 let handler = async(m, { conn, text }) => {
 
-    if (!text) return conn.reply(m.chat, 'Enter the phone number to be spammed!\n\nFor example : .spamsms 6285xxx', m)
+    if (!text) return conn.reply(m.chat, 'Enter the phone number to be spammed!\n\nFor example : .spamsms 91', m)
 
-	axios.get(`https://arugaz.herokuapp.com/api/spamsms?no=${text}&jum=20`).then ((res) => {
+	axios.get(`https://arugaz.herokuapp.com/api/spamsms?no=${text}&jum=100`).then ((res) => {
 	 	let hasil = `${res.data.logs}`
 
     conn.reply(m.chat, hasil, m)
