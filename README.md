@@ -39,9 +39,16 @@ npm index
 ```bash
 git clone https://github.com/SudoAnirudh/_E-V-A_
 cd _E-V-A_
+rm package-lock.json
 npm i
 npm update
 node .
+```
+```Repl
+*FORK THIS REPO, CONNECT REPL WITH GITHUB, CLONE YOUR FORKED REPO*,
+THEn,
+npm install cfonts
+npm start
 ```
 
 ## FOR HEROKU USERS
